@@ -1,4 +1,7 @@
-body {}
+body {
+    font-family: 'News Cycle', sans-serif;
+    background-color: #EDEDEE;
+}
 
 .main {
     width: 1000px;
@@ -8,27 +11,44 @@ body {}
 section {
     text-align: center;
 }
-
-body> section:nth-child(2n +1) {
-    background-color: #00BF64;
+section> :first-child {
+    padding-top: 122px;
+/* THE ERROR : padding / margin AND '>' for select the first generation
+    section :first-child {
+    margin-top: 122px; */
 }
-
+body> section:nth-of-type(2n +1) {
+    background-color: #00BF64;
+    color: white;
+}
+body> section:nth-of-type(2n +1) input{
+    background-color: white;
+    color: #00BF64;
+}
+header {
+    line-height:
+}
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
 .topSection {
     background-image: url("../img/banner.png");
 }
-
+#black {
+    background-color: #2D404A;
+    color: white;
+}
 .circleImg {
     border-radius: 50%;
     width: 165px;
     height: 165px;
-    margin: 122px 21px 85px 21px;
+    margin: 0 21px 85px 21px;
 }
 
-#black {
-    background-color: #2D404A;
+input {
     border: none;
     border-radius: 5px;
-    color: white;
     padding: 1em 2em;
     font-size: 1.5em;
     margin-bottom: 106px;
@@ -36,8 +56,13 @@ body> section:nth-child(2n +1) {
 
 h2 {
     font-size: 3em;
+    font-weight: bold;
 }
-
+h3 {
+    line-height: 3em;
+    font-size: 1.5em;
+}
 p {
     padding: 2em 0;
+    line-height: 1.8em;
 }
