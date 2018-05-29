@@ -1,0 +1,16 @@
+/* <!-- development color/--> <link rel="stylesheet" href="css/style.css" /> */
+nav {
+    background-color: green;
+}
+header {
+    background-color: blue;
+}
+article {
+    background-color: yellow;
+}
+form {
+    background-color: grey;
+}
+footer {
+    background-color: red;
+}
