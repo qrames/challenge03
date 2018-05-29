@@ -1,3 +1,14 @@
 body{
-    
+
+}
+section {
+    background-color:
+    width: 1000px;
+    height: 615px;
+}
+.topSection {
+    background-image: url("");
+}
+.circleImg {
+    border-radius: 50%;
 }
