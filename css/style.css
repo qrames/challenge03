@@ -3,25 +3,21 @@ body {
     background-color: #EDEDEE;
 }
 
-
+a{
+    text-decoration: none;
+}
 section {
     text-align: center;
-}
-section> :first-child {
-    padding-top: 122px;
-/* THE ERROR : padding / margin AND '>' for select the first generation
-    section :first-child {
-    margin-top: 122px; */
 }
 body> section:nth-of-type(2n +1) {
     background-color: #00BF64;
     color: white;
 }
-body> section:nth-of-type(2n +1) input{
+body> section:nth-of-type(2n +1) a{
     background-color: white;
     color: #00BF64;
 }
-body> section:nth-of-type(2n) input{
+body> section:nth-of-type(2n) a{
     color: white;
     background-color: #00BF64;
 }
@@ -37,16 +33,35 @@ h1 {
     }
     nav>ul>li{
         display: inline-block;
-        width: 49%;
+        min-width: 49%;
+        max-width: 100%
+    }
+    .circleImg {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin: 20px 21px 10px 21px;
     }
 }
 @media screen and (min-width: 1000px){
     header {
         line-height: 106px;
     }
+    section> :first-child {
+        padding-top: 122px;
+        /* THE ERROR : padding / margin AND '>' for select the first generation
+        section :first-child {
+        margin-top: 122px; */
+    }
     .main {
         width: 1000px;
         margin: 0 auto;
+    }
+    .circleImg {
+        border-radius: 50%;
+        width: 165px;
+        height: 165px;
+        margin: 0 21px 85px 21px;
     }
     header {
         height: 106px;
@@ -80,19 +95,14 @@ nav>ul>li>a:active{
     background-color: #2D404A;
     color: white;
 }
-.circleImg {
-    border-radius: 50%;
-    width: 165px;
-    height: 165px;
-    margin: 0 21px 85px 21px;
-}
 
-input {
+main.main>a {
     border: none;
     border-radius: 5px;
     padding: 1em 2em;
     font-size: 1.5em;
     margin-bottom: 106px;
+    display: inline-block;
 }
 
 h2 {
