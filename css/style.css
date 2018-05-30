@@ -33,8 +33,11 @@ h1 {
     }
     nav>ul>li{
         display: inline-block;
-        min-width: 49%;
-        max-width: 100%
+        width: 49%;
+        line-height: 2em;
+    }
+    nav>ul>:nth-child(2n+1):last-child{
+        width: 100%;
     }
     .circleImg {
         width: 70px;
